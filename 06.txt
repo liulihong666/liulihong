@@ -1,0 +1,20 @@
+rpm -qa | grep mysql
+rpm -ivh .....rpm
+rpm -ql httpd | mpre
+rpm -e xxxxx(名，不是rpm包)
+
+svn安装
+ cd opt
+ ll
+ mkdir 文件名
+ ll 查看
+ cd 文件名
+ ll
+ SVNadmin create 文件名
+ ll
+ cd conf
+ ll
+ vi SVNserve.conf
+ vi password
+ SVNserve -d -r /opt/文件名
+ ps -ef | grep 文件名
