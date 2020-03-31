@@ -1,0 +1,30 @@
+1、linux是什么？
+	内核开源的操作系统，主要用于服务器级操作系统使用
+
+2、基本命令
+	pwd、cd、ls、alias
+	文件系统：mkdir、touch、rmdir、rm、mv、cp、find
+		find 路径 -name '*名字*'  运维对find就有一堆技巧
+	     查看文件内容；cp /etc/httpd/conf/httpd.conf /tmp
+			看：cat、more、less、tail -f
+			    静态文件：
+				cat：很快，只适合看小文件，最好是一屏就能展示完的
+			        more：只能向下看    退出：q      回车、空格
+			        less：随意看
+		             动态文件：日志文件
+                                tail -f 明后天就可以了
+		            head、tac
+				head -n 10 httpd.conf
+				tac httpd.conf
+	     往文件中写入内容：（***************）  vi
+
+
+补：服务器：IBM、HP、华为、浪潮  
+	web：门道系统 用一台pc当服务器（几千块）
+             刀片机（几十万）
+	     机架式
+	     机柜式
+	买：厦门
+	     虚拟主机
+	     云服务器
+
