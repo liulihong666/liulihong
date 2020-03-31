@@ -1,0 +1,25 @@
+系统管理
+	对测试来说，工作中不大，运维多，但是作为起码的一些了解还是希望你知道
+	有的笔记题会多少考一下，或面试官搞不好会问一下
+	
+	1、查看CPU和内存等信息（了解）
+		more /proc/cpuinfo 、more /proc/meminfo
+		dmesg>server.txt (运维)
+			>重定向  如果没有server.txt就创建一个，如果有，就覆盖 （必会）
+				dmesg打出来的信息以前我们是给电信，电信有专人和专系统去解析里面的内容，看看服务器是否正常（巡检）
+			>>重定向 追加到后面这个文件的末尾
+
+	2、看硬盘占有率(当我系统硬盘资源不够，就会结合这来看，同时rm -rf结合删除大文件或不要的文件)
+		df -h 、du -sh *
+	3、内存占有率
+		free -m	
+	4、history
+		你工作后，搭环境没搭建好，找同事或开发帮忙，来到你座位，一顿狂敲，最后告诉你，可以了。你 :( ?
+		如果后面又让我搭，继续 :(。你迫切的需要history，看看他都做了什么，同时，结合>
+			histoty>huanjing.txt
+	5、看网卡、ip
+		more /etc/sysconfig/network-scripts/ifcfg-eth0、ifconfig
+	6、防火墙（对服务的处理）
+		service 服务名 状态
+		service iptables start|stop|restart
+		
