@@ -1,0 +1,28 @@
+windows：rar、zip
+	注意：rar在linux中是打不开的，只支持zip的操作
+		zip 包名.zip 文件/文件夹(压缩)
+		unzip 包名.zip
+	      window的压缩过程有个特点：既打包又压缩
+
+linux是分开的：
+	打包（不改变文件大小）：tar
+		创建：tar c[v]f 包名.tar 文件/文件夹
+		解压：tar x[v]f 包名.tar
+		查看压缩包的内容：tar -tf 包名.tar
+		把x内容追加到压缩包中：tar -rf 包名.tar 文件/文件夹
+		把压缩包中的x内容删除：tar --delete -f 包名.tar 文件/文件夹
+	压缩：gz
+		你首先是个tar包  忘记吧
+			gzip 包名.tar
+			gunzip 包名.tar
+		我们往往是一次性自打包又压缩（windows行为）
+			创建：tar zc[v]f 包名.tar.gz 文件/文件夹
+			解压：tar zx[v]f 包名.tar.gz
+
+【特别注意】
+	我们取后缀仅仅是为了标识，完全和windows是2个概念
+	注意工作重点：
+		unzip 包名.zip
+		创建：tar zc[v]f 包名.tar.gz 文件/文件夹
+		解压：tar zx[v]f 包名.tar.gz	
+	思考：如果对.tar.gz进行追加和查看	
